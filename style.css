@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    color: black;
+}
+
+/* Header section */
+div.header {
+    display: flex;
+   justify-content: space-between;
+   z-index: 10;
+}
+div.logo img {
+    margin-block: 25px;
+    margin-inline: 20px;
+    position: fixed;
+    cursor: pointer;
+    width: 350px;
+}
+div.info {
+    margin: 15px 15px;
+    font-size: 25px;
+    position: fixed;
+    right: 0;
+}
+div.info a {
+    margin-block: auto;
+    text-decoration: none;
+}
+div.info a:hover {
+    text-decoration: underline;
+}
+
+/* Image section */
+div.container {
+    width: 100%;
+}
+div.container p {
+    display: block;
+    text-align: center;
+    padding-block: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+div.container p a {
+    text-decoration: none;
+    color: #e568ac;
+}
+div.container p a:hover {
+    text-decoration: underline;
+}
+div.cover {
+    margin-block: 10px;
+}
+div.image img {
+    display: block;
+    z-index: 1000;
+    margin-inline: auto;
+    width: 600px;
+}
+
+/* Footer section */
+div.footer {
+    display: flex;
+    justify-content: space-between;
+}
+div.note {
+    width: 30%;
+    margin: 15px 15px;
+    position: fixed;
+    bottom: 0;
+}
+div p {
+    display: block;
+}
+div p.description {
+    font-size: 23px;
+    font-weight: bold;
+}
+div p.year {
+    padding-block: 10px;
+    font-size: 16px;
+}
+div.note a:hover {
+    text-decoration: none;
+}
+div.note p.policy {
+    font-size: 25px;
+    font-weight: bold;
+}
+div.list-items {
+    margin: 15px 15px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+div.list-items li {
+    list-style: none;
+    line-height: 1.5;
+}
+div.list-items li #issue6 {
+    background-color: #fff;
+}
+div.list-items li #issue5 {
+    background-color: #00c1b5;
+}
+div.list-items li #issue4 {
+    background-color: #ff651a;
+}
+div.list-items li #issue3 {
+    background-color: #ffbe00;
+}
+div.list-items li #issue2 {
+    background-color: #1d3fbb
+}
+div.list-items li #issue1 {
+    background-color: #e30512
+}
+div.list-items li a {
+    font-size: 24px;
+    text-decoration: none;
+}
+div.list-items li a:hover {
+    text-decoration: underline;
+}
+div.list-items li a:active {
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 1075px) {
+    div.logo img {
+        width: 260px;
+        margin: 20px 15px;
+        position: relative;
+    }
+    div.info {
+        /* margin: 10px 10px;
+        font-size: 20px;
+        position: relative;
+        top: 4450px;
+        right: 0;
+        padding-block: 20px; */
+        display: none;
+    }
+    div.info a {
+        margin-block: auto;
+    }
+    div.image img {
+        width: 450px;
+    }
+    div.container p {
+        display: block;
+        text-align: center;
+        padding-block: 10px;
+        font-size: 19px;
+        font-weight: bold;
+    }
+    div.note {
+        margin: 10px 10px;
+        position: relative;
+    }
+    div p.description {
+        font-size: 19px;
+    }
+    div p.year {
+        font-size: 14px;
+    }
+    div.note p.policy {
+        font-size: 20px;
+    }
+    div.list-items {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    div.logo img {
+    width: 230px;
+    }
+    div.info {
+        text-align: center;
+    }
+    div.footer {
+        margin: 10px;
+    }
+    div.note {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 450px) {
+    div.logo img {
+        width: 200px;
+        margin-block: 20px;
+    }
+    div.image img {
+        width: 250px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 350px) {
+    div.logo img {
+        width: 60%;
+    }
+    div.cover {
+        height: 100vh;
+    }
+    div.container p {
+        text-align: center;
+        padding-block: 15px;
+    }
+}
